@@ -23,8 +23,7 @@ RUN git config --global user.name "gitlab ci"
 
 RUN mkdir -p ~/.ssh
 RUN chmod 700 ~/.ssh
-COPY id_rsa /root/.ssh/id_rsa
-RUN chmod 600 ~/.ssh/id_rsa
+
 RUN touch ~/.ssh/known_hosts
 RUN chmod 644 ~/.ssh/known_hosts
 
